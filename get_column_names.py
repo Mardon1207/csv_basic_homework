@@ -10,10 +10,7 @@ def get_column_names(data):
     """
     f=open('data.csv')
     r=reader(f,delimiter=',')
-    lst=[]
-    for i in list(r):
-        lst.append(i[1])
-    return lst
+    return list(r)[0]
 print(get_column_names('data.csv'))
     
     
